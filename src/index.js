@@ -16,7 +16,7 @@ app.use(express.json());    // json body parser
 
 // home route
 app.get('/', (req, res) => {
-    res.send('hello world');
+    res.send('food-app-api-running-24x7!');
 });
 
 
