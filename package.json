@@ -1,0 +1,18 @@
+{
+  "name": "flipr-task-food-mobile-application",
+  "version": "1.0.0",
+  "description": "this is the backend for the mobile application of food-app for flipr-task.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4"
+  }
+}
