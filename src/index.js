@@ -134,6 +134,16 @@ app.get('/food-items', authenticateToken, async (req, res) => {
 });
 
 
+app.get('/all-food-items', async (req, res) => {
+    try {
+        const foodItems = await FoodItem.find(); // Fetch all food items from the database
+        res.json(foodItems); // Send the food items as JSON response
+    } catch (error) {
+        res.status(500).json({ error: error.message }); // Handle errors
+    }
+});
+
+
 // start the server
 const PORT = process.env.PORT || 5050;
 app.listen(PORT, () => {
